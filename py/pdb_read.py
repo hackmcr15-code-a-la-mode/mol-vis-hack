@@ -14,7 +14,7 @@ for arg in sys.argv:
         pdb_code = arg.lower()
         molecule = chimera.openModels.open(arg, type='PDB')
         rc('wait 1')
-        rc('export '+basedir+'/structures/wrl'+'/'+pdb_code+'.wrl')
+        rc('export '+basedir+'/structures/wrl/'+pdb_code+'.wrl')
 
 # converted models to .wrl
 
