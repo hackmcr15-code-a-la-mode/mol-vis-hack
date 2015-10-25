@@ -1,6 +1,0 @@
-# !/usr/bin/env bash
-
-BASEDIR=$(dirname $0)
-
-chimera --script "$BASEDIR/../py/pdb_read.py $1" --nostatus
-echo "thanks!"
