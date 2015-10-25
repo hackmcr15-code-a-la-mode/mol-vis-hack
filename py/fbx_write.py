@@ -27,3 +27,4 @@ for arg in py_args:
         bpy.ops.export_scene.fbx(
                 filepath = abs_file_out
         )
+        bpy.ops.wm.quit_blender()
