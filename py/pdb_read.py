@@ -10,12 +10,12 @@ for arg in sys.argv:
         basedir = arg.split('basedir:')[1]
         print basedir
         # This is the base directory, used for saving files
-    if (len(arg) == 4):
+    elif (len(arg) == 4):
         pdb_code = arg.lower()
         molecule = chimera.openModels.open(arg, type='PDB')
         rc('wait 1')
         rc('export '+basedir+'/structures/wrl'+'/'+pdb_code+'.wrl')
 
-# converted models to .fbx
+# converted models to .wrl
 
 rc('stop now')

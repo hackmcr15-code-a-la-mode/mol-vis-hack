@@ -1,0 +1,10 @@
+# !/usr/bin/env bash
+
+BASEDIR=$(dirname $0)
+ABSBASEDIR=$(readlink -f $BASEDIR)
+
+echo "$ABSBASEDIR"
+
+blender --python "$ABSBASEDIR/py/fbx_write.py basedir:$ABSBASEDIR $1"
+
+echo "thanks!"
